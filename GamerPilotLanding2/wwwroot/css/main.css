@@ -1,2 +1,204 @@
+@font-face {
+  font-family: "Work Sans Med";
+  src: url("/fonts/WorkSans-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Work Sans Reg";
+  src: url("/fonts/WorkSans-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Abel";
+  src: url("/fonts/Abel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Work Sans Light";
+  src: url("/fonts/WorkSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.container-fluid {
+  max-width: 1980px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow: hidden; }
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important; }
+
 body {
-  background: red; }
+  font-family: Work Sans Med, Trebuchet MS, Arial, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 60px; }
+
+/* navbar */
+.navbar {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  background: #262935; }
+
+.navbar-form {
+  padding-right: 150px; }
+
+.nav-links {
+  font-family: 'Work Sans Reg';
+  cursor: pointer; }
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important; }
+
+.navbar-toggle:hover {
+  background: transparent !important; }
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+  background-color: #fff; }
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%; }
+
+.navbar-toggle .middle-bar {
+  opacity: 0; }
+
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%; }
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0); }
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1; }
+
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0); }
+
+.nav li {
+  padding-right: 20px;
+  margin-top: 2.75px; }
+
+.nav-links {
+  font-family: 'Work Sans Reg';
+  cursor: pointer; }
+
+.nav li:last-child {
+  padding-right: 35px; }
+
+.nav > li > a:hover {
+  background-color: transparent; }
+
+a {
+  color: #fff;
+  text-decoration: none !important; }
+
+a:hover {
+  color: #fff !important; }
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 500px; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
+@media screen and (max-width: 992px) {
+  .navbar-form {
+    padding-right: 15px; }
+  .btn-sub {
+    padding: 1.3rem !important; } }
+
+@media screen and (max-width: 767px) {
+  .input-sub {
+    float: left;
+    width: 60% !important; }
+  .btn-sub {
+    width: 40% !important;
+    margin-top: -6px; } }
+
+/* Buttons */
+.btn-blue {
+  display: inline-block !important;
+  padding: 1.3rem 4rem 1.3rem 4rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 2.1875rem;
+  cursor: pointer;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #4a90e2;
+  border: 0.0625rem solid #4a90e2; }
+
+.btn-blue-nofill {
+  display: inline-block !important;
+  padding: 1.3rem 4rem 1.3rem 4rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 2.1875rem;
+  cursor: pointer;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #4a90e230;
+  margin-right: 35px; }
+
+.btn-blue:hover {
+  background-color: #1f69c1 !important;
+  border: 0.0625rem solid #1f69c1 !important; }
+
+/* Hero */
+#hero {
+  background-color: #262935; }
+
+.test {
+  background-color: blue;
+  height: 200px;
+  width: 100%; }
+
+.input-sub {
+  border: none;
+  padding: 0 25px;
+  color: #414351;
+  font-size: 15px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  height: 48px;
+  display: inline-block; }
+
+.btn-sub {
+  margin-left: -5px;
+  display: inline-block;
+  border-radius: 0; }
