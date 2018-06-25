@@ -437,3 +437,13 @@ iframe {
   margin-top: 530px; }
 
 /***************/
+/*** footer ***/
+footer {
+  background-color: #262935; }
+
+.company-info p {
+  text-align: center;
+  color: white;
+  margin-top: 30px; }
+
+/**************/
