@@ -1,14 +1,14 @@
 ﻿<section id="hero">
     <div class="row">
 
-        <!-- Selling points -->
+        <!-- Short introduction -->
         <div class="col-md-6">
             <div class="hero_left">
 
                 <h1>GamerPilot</h1>
                 <hr />
                 <h2>
-                    Vi lancerer snart en game-changing video-on-demand platform, der vil revolutionere undervisning i e-sport. 
+                    Vi lancerer snart en game-changing video-on-demand platform, der vil revolutionere undervisning i e-sport.
                     <br />
                     <br />
 
@@ -30,63 +30,118 @@
                     <div id="popup__toggle">
                         <div class="playbox">
                             <i class="fa fa-play-circle">
-
                             </i>
-
                             <h2>
                                 SE TEASER VIDEO
                             </h2>
                         </div>
-                        
                     </div>
-                
 
                     <div class="popup__overlay">
                         <div class="popup" id="popupVid">
                             <a href="#" class="popup__close"><i class="fa fa-times"></i></a>
-                            <iframe src="https://www.youtube.com/embed/TRGoy0XLrUA?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/watch?v=Gd9OhYroLN0&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO&index=6" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
 
-
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Selling points -->
+<section>
+    <div class="row" style="text-align: center;">
 
+        <div class="col-md-4">
+            <div class="feature">
+                <i class="fas fa-code-branch"></i>
+                <h3>Skræddersyet forløb</h3>
+                <p>
+                    Vi skræddersyer et læringsforløb, der passer til dig. Derved slipper du for selv at skulle vurdere, hvad som er relevant for dig.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature">
+                <i class="fas fa-user-cog"></i>
+                <h3>Personlig udvikling</h3>
+                <p>
+                    Vi fokuserer på din personlige udvikling ved at tage udgangspunkt i kompetencer som kommunikation,
+                    samarbejde og strategisk tænkning. Vi hjælper dig med at få et større udbytte ud af den tid du bruger foran skærmen.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>
+                    Produceret af specalister
+                </h3>
+                <p>
+                    Vores videoer er produceret af specalister fra virkeligheden og nogle af de aller bedste spillere. 
+                    Vi sørger derfor for at kurserne er spækket med guldkorn.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Learn more section -->
+<section id="concept">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="hero_left">
+                <h1>Esport undervisning på et nyt niveau</h1>
+                <h2>
+                    Vores kurser hjælper dig til at blive en bedre spiller ved både at udvikle dine spilmæssige
+                    kompetencer, og ting du kan bruge i virkeligheden <br /> <br />
+
+                    Videokurserne er produceret sammen med specialister og nogle af de absolut bedste spillere i Danmark, for
+                    at sikre kvaliteten er den bedste.
+
+                    <br /> <br />
+
+                    Vi hjælper dig med at sortere indholdet, så det er relevant for der, hvor du er i din læringsproces. Det er vigtigt
+                    for os, at det er overskueligt og let for dig at lære om dit spil.
+                </h2>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="hero_right">
+                <div class="concept_right">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Feedback section -->
+<section id="feedback">
+    <img class="first-gradient" src="/images/bg-gradient.png" alt="Left gradient background">
+
+    <img class="section-gradient" src="/images/bg-gradient.png" alt="Right gradient background">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="feedback-container">
+                <h2>Er der noget, du synes vi skal vide?</h2>
+                <form asp-controller="Home" asp-action="Feedback" method="post" id="form-feedback" asp-route-returnUrl="Index">
+                    <input type="text" class="input-feedback" name="name" placeholder="navn *" required/>
+                    <input type="email" class="input-feedback form-control" name="fb_email" placeholder="email *" required/>
+
+                    <textarea class="feedback_textarea" name="comment" placeholder="besked *" required></textarea>
+                    <input type="submit" class="btn-blue btn-feedback" value="Send" />
+                </form>
             </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
 </section>
 
-
-<section id="points">
-    <div class="row">
-
-        <div class="col-md-4">
-            <i class="fa fa-file-contract"></i>
-
-            Skræddersyet forløb
-        </div>
-
-        <div class="col-md-4">
-
-            Produceret af specalister
-        </div>
-
-        <div class="col-md-4">
-            Life skills
-        </div>
-
-
-
-    </div>
-
-
-</section>

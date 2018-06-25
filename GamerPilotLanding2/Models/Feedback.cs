@@ -14,6 +14,12 @@ namespace GamerPilotLanding2.Models
         public DateTime Created { get; set; }
 
         [Required]
+        public string Name { get; set; }
+
+        [DataType(DataType.EmailAddress), Required]
+        public string Email { get; set; }
+
+        [Required]
         public string Comment { get; set; }
     }
 }

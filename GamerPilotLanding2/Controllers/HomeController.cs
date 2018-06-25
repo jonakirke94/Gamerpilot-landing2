@@ -66,6 +66,38 @@ namespace GamerPilotLanding2.Controllers
             return RedirectToAction(returnUrl);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Feedback(string comment, string name, string fb_email, string returnUrl)
+        {
+            if (string.IsNullOrEmpty(comment))
+            {
+                TempData["Error"] = "Tekstfeltet kan ikke være tomt!";
+                return RedirectToAction(returnUrl);
+            }
+
+            var fb = new Feedback()
+            {
+                Name = name,
+                Email = fb_email,
+                Comment = comment,
+                Created = DateTime.Now
+            };
+
+            try
+            {
+                _context.Feedback.Add(fb);
+                _context.SaveChanges();
+                TempData["Success"] = "Tak for din feedback!";
+            }
+            catch (Exception)
+            {
+                TempData["Error"] = "Hov noget gik galt - Kontakt os gerne";
+            }
+
+            return RedirectToAction(returnUrl);
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
