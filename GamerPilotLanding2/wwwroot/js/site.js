@@ -30,10 +30,6 @@ function toggleVideo(state) {
     var div = document.getElementById("popupVid");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
     func = state == "hide" ? "pauseVideo" : "playVideo";
-    console.log(state)
-    console.log(func)
-
-
     iframe.postMessage(
         '{"event":"command","func":"' + func + '","args":""}',
         "*"
