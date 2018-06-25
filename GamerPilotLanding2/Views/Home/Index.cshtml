@@ -16,7 +16,7 @@
                     Vores videoer sætter fokus på udvikling af kompetencer, du også kan bruge i virkeligheden
                 </h2>
 
-                <a href="" class="btn-blue" style="float: right;">Lær mere</a>
+                <a href="#features" class="btn-blue" style="float: right;" id="js-scroll">Lær mere</a>
 
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <div class="popup__overlay">
                         <div class="popup" id="popupVid">
                             <a href="#" class="popup__close"><i class="fa fa-times"></i></a>
-                            <iframe src="https://www.youtube.com/watch?v=Gd9OhYroLN0&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO&index=6" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/watch?v=cEaEdLQbAFM&index=27&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -50,8 +50,23 @@
     </div>
 </section>
 
+<!-- Subscribtion only shown on mobile -->
+<section class="hidden-lg hidden-md hidden-sm" id="subscribe">
+    <div class="row">
+        <div class="col-xs-12">
+            <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="Index">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
+                </div>
+                <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
 <!-- Selling points -->
-<section>
+<section id="features">
     <div class="row" style="text-align: center;">
 
         <div class="col-md-4">
@@ -98,16 +113,14 @@
             <div class="hero_left">
                 <h1>Esport undervisning på et nyt niveau</h1>
                 <h2>
-                    Vores kurser hjælper dig til at blive en bedre spiller ved både at udvikle dine spilmæssige
-                    kompetencer, og ting du kan bruge i virkeligheden <br /> <br />
-
-                    Videokurserne er produceret sammen med specialister og nogle af de absolut bedste spillere i Danmark, for
-                    at sikre kvaliteten er den bedste.
-
+                    Der eksisterer et overvælende udbud af videoer på internettet, der forsøger at forklare hvad du skal gøre for at blive bedre.
+                    Vi har sat os for at gøre rejsen til at blive en god spiller mere overskuelig, og vil samtidig sikre en konsekvent høj kvalitet
+                    i vores kurser, så du ikke skal bruge lang tid på at lede efter guldkornene.
                     <br /> <br />
+                    Vi sætter som den første digitale platform fokus på din personlige udvikling, mens du spiller. E-sport kan nemlig være med til at træne en række
+                    kompetencer, du har stor gavn af at mestre i virkeligheden. Vi vil rette op på den misforståelse, der findes hos mange, at gaming er spild af tid.
 
-                    Vi hjælper dig med at sortere indholdet, så det er relevant for der, hvor du er i din læringsproces. Det er vigtigt
-                    for os, at det er overskueligt og let for dig at lære om dit spil.
+                    
                 </h2>
             </div>
         </div>

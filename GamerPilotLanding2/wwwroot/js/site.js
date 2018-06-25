@@ -1,4 +1,15 @@
-﻿var p = $(".popup__overlay");
+﻿
+
+/* Learn more slide */
+$(function () {
+    $('#js-scroll').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100 }, 500, 'linear');
+    });
+});
+
+//popup video
+var p = $(".popup__overlay");
 
 $("#popup__toggle").click(function () {
     p.css("display", "block");

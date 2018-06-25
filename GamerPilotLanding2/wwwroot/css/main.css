@@ -240,6 +240,11 @@ hr {
   margin-left: 0; }
 
 /* Promotion video */
+/*** subsribe ***/
+#subscribe {
+  background-color: #262935; }
+
+/**********/
 .vid {
   background-color: #474b57;
   margin: auto;
