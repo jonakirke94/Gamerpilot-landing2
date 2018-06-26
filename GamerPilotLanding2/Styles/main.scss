@@ -301,7 +301,7 @@ a:hover {
 
 h4 {
     @include title;
-    color: $blue;
+    color: $main;
     font-size: 22px;
     font-weight: bold;
     line-height: 33px;
@@ -594,17 +594,63 @@ footer {
 }
 
 #life-skills {
+    background-color: $white;
+    @include parent-section;
+}
+
+#intro {
     background-color: $main;
     @include parent-section;
 }
 
-#learning-wheel {
-    padding-bottom: 20px;
+@mixin box {
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+    border-radius: 5px;
     text-align: center;
+    background-color: #f8f8f8;
 }
 
-#learning-wheel div {
-    padding-bottom: 30px;
+.quick-box {
+    @include box;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.qb-head {
+    background-color: $grey;
+    background-image: none;
+    color: $white;
+    font-size: 20px;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.qb-content {
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.qb-element {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.qb-icon {
+    color: $blue;
+    font-size: 20px;
+}
+
+.wheel-box {
+      @include box;
+}
+
+
+
+#learning-wheel {
+    text-align: center;
 }
 
 #learning-wheel > div > h4 {
@@ -614,7 +660,7 @@ footer {
 .fa-globe-americas {
     margin-top: 130px;
     font-size: 158px;
-    color: $blue;
+    color: $main;
 }
 
 .fa-sort-amount-down {
@@ -634,6 +680,16 @@ footer {
     border-left-color: $blue;
 }
 
+.block-main {
+    @include block;
+    margin-top: 50px;
+    border-left-color: $main;
+}
+
+.block-main h3, .block-main p {
+    color: $main;
+}
+
 .block-highlight {
     @include block;
     margin-top: 50px;
@@ -650,8 +706,28 @@ footer {
 
 /**************/
 
-/* timeline course structure */
+/** experts */
 
+#experts {
+    text-align: center;
+}
+
+#experts h1 {
+    color: $main;
+}
+
+.fa-angle-double-down {
+    color: $main;
+    font-size: 28px;
+    padding-bottom: 60px;
+}
+
+.fa-exp {
+    font-size: 38px;
+}
+
+/************/
+/* timeline course structure */
 .timeline {
     list-style: none;
     padding: 20px 0 20px;

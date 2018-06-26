@@ -247,7 +247,7 @@ h4 {
   font-family: 'Work Sans Light', helvetica, arial, sans-serif;
   color: #fff;
   margin-bottom: 15px;
-  color: #4a90e2;
+  color: #262935;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px; }
@@ -476,16 +476,55 @@ footer {
 /**************/
 /* parents */
 #life-skills {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px; }
+
+#intro {
   background-color: #262935;
   text-align: center;
   padding: 50px; }
 
-#learning-wheel {
-  padding-bottom: 20px;
-  text-align: center; }
+.quick-box {
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f8f8f8;
+  width: 300px;
+  margin-top: 100px; }
 
-#learning-wheel div {
-  padding-bottom: 30px; }
+.qb-head {
+  background-color: #474b57;
+  background-image: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.qb-content {
+  padding: 10px;
+  padding-bottom: 25px; }
+
+.qb-element {
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 15px; }
+
+.qb-icon {
+  color: #4a90e2;
+  font-size: 20px; }
+
+.wheel-box {
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f8f8f8; }
+
+#learning-wheel {
+  text-align: center; }
 
 #learning-wheel > div > h4 {
   color: #1f69c1; }
@@ -493,7 +532,7 @@ footer {
 .fa-globe-americas {
   margin-top: 130px;
   font-size: 158px;
-  color: #4a90e2; }
+  color: #262935; }
 
 .fa-sort-amount-down {
   margin-top: 130px;
@@ -514,6 +553,18 @@ footer {
   margin-top: 50px;
   border-left-color: #4a90e2; }
 
+.block-main {
+  padding: 20px;
+  padding-top: 0;
+  border-left: 5px solid;
+  border-radius: 3px;
+  text-align: left;
+  margin-top: 50px;
+  border-left-color: #262935; }
+
+.block-main h3, .block-main p {
+  color: #262935; }
+
 .block-highlight {
   padding: 20px;
   padding-top: 0;
@@ -528,6 +579,22 @@ footer {
   line-height: 30px; }
 
 /**************/
+/** experts */
+#experts {
+  text-align: center; }
+
+#experts h1 {
+  color: #262935; }
+
+.fa-angle-double-down {
+  color: #262935;
+  font-size: 28px;
+  padding-bottom: 60px; }
+
+.fa-exp {
+  font-size: 38px; }
+
+/************/
 /* timeline course structure */
 .timeline {
   list-style: none;
