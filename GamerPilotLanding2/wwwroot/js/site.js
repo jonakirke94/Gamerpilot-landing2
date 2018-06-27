@@ -1,4 +1,41 @@
-﻿
+﻿/* USER TOUR */
+
+function test() {
+    console.log('Hello world!')
+}
+
+function startTour() {
+    console.log('Started tour')
+
+    let tour = new Shepherd.Tour({
+        defaults: {
+            classes: 'shepherd-theme-arrows',
+            scrollTo: true,
+        }
+    });
+
+    tour.addStep('step1', {
+        title: 'Example Shepherd',
+        text: 'Creating a Shepherd is easy too! Just create ...',
+        attachTo: '.quick-box top',
+        advanceOn: '#experts click'
+    });
+
+    tour.addStep('step2', {
+        title: 'Example Shepherd',
+        text: 'Creating a Shepherd is easy too! Just create ...',
+        attachTo: '.test bottom',
+        advanceOn: '.test1 click'
+    });
+
+    tour.start();
+}
+
+
+
+/***************/
+
+
 
 /* Learn more slide */
 $(function () {

@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/main.min.css" />
+    <link rel="stylesheet" href="~/css/shepherd-theme-arrows.css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- fav icon in browser -->
     <link rel="icon" type="image/x-icon" href="/images/gp-brand.png">
@@ -36,7 +38,7 @@
 
                 //Get the current action name, so we can redirect to it on submit
                 var action = ViewContext.RouteData.Values["Action"];
-                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right"  asp-route-returnUrl="@action">
+                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control input-sub" placeholder="hold dig up to date">
                     </div>
@@ -56,8 +58,8 @@
 
                     <div class="col-md-12" style="text-align: center">
                         <h2>Vi er stadig ved at indsamle data. Har du 2 min?</h2>
-                            <a target="_blank" href="https://da.surveymonkey.com/r/5HZWRMM" class="btn-blue" style="margin-right: 10px;">Spørgeskema (unge)</a>
-                            <a target="_blank" href="https://da.surveymonkey.com/r/5H6KYT8" class="btn-blue">Spørgeskema (forældre)</a>
+                        <a target="_blank" href="https://da.surveymonkey.com/r/5HZWRMM" class="btn-blue" style="margin-right: 10px;">Spørgeskema (unge)</a>
+                        <a target="_blank" href="https://da.surveymonkey.com/r/5H6KYT8" class="btn-blue">Spørgeskema (forældre)</a>
                     </div>
 
 
@@ -72,9 +74,15 @@
         </footer>
     </div>
 
+
+    <script src="~/js/tether.js"></script>
+    <script src="~/js/shepherd.min.js"></script>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
 
     @RenderSection("Scripts", required: false)
