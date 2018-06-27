@@ -598,6 +598,22 @@ footer {
     @include parent-section;
 }
 
+.container-grey {
+    background-color: $grey;
+    @include parent-section;
+}
+
+.container-white {
+    background-color: $white;
+    @include parent-section;
+}
+
+
+.container-main {
+    background-color: $main;
+    @include parent-section;
+}
+
 #intro {
     background-color: $main;
     @include parent-section;
@@ -669,6 +685,36 @@ footer {
     font-size: 158px;
 }
 
+.fa-child {
+        margin-top: 100px;
+        font-size: 158px;
+        color: $blue;
+}
+
+.fa-eye {
+    margin-top: 100px;
+    font-size: 158px;
+    color: $blue;
+}
+
+.fa-assistive-listening-systems {
+    margin-top: 100px;
+    font-size: 158px;
+    color: $highlight;
+}
+
+.fa-boxes {
+    margin-top: 200px;
+    font-size: 158px;
+    color: $main;
+}
+
+.fa-diagnoses {
+    margin-top: 130px;
+    font-size: 158px;
+    color: $highlight;
+}
+
 #video-structure {
     background-color: $grey;
     @include parent-section;
@@ -710,6 +756,7 @@ footer {
 
 #experts {
     text-align: center;
+    padding-bottom: 70px;
 }
 
 #experts h1 {

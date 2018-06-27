@@ -480,6 +480,21 @@ footer {
   text-align: center;
   padding: 50px; }
 
+.container-grey {
+  background-color: #474b57;
+  text-align: center;
+  padding: 50px; }
+
+.container-white {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px; }
+
+.container-main {
+  background-color: #262935;
+  text-align: center;
+  padding: 50px; }
+
 #intro {
   background-color: #262935;
   text-align: center;
@@ -539,6 +554,31 @@ footer {
   color: #1f69c1;
   font-size: 158px; }
 
+.fa-child {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #4a90e2; }
+
+.fa-eye {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #4a90e2; }
+
+.fa-assistive-listening-systems {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #1f69c1; }
+
+.fa-boxes {
+  margin-top: 200px;
+  font-size: 158px;
+  color: #262935; }
+
+.fa-diagnoses {
+  margin-top: 130px;
+  font-size: 158px;
+  color: #1f69c1; }
+
 #video-structure {
   background-color: #474b57;
   text-align: center;
@@ -581,7 +621,8 @@ footer {
 /**************/
 /** experts */
 #experts {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 70px; }
 
 #experts h1 {
   color: #262935; }
