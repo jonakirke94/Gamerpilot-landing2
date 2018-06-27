@@ -1,4 +1,6 @@
 ﻿<section id="hero">
+    <div id="particles-js" class="visible-md visible-lg"></div>
+
     <div class="row">
 
         <!-- Short introduction -->
@@ -40,7 +42,7 @@
                     <div class="popup__overlay">
                         <div class="popup" id="popupVid">
                             <a href="#" class="popup__close"><i class="fa fa-times"></i></a>
-                            <iframe src="https://www.youtube.com/embed/h6sFG7qOd4A?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen ></iframe>
+                            <iframe src="https://www.youtube.com/embed/h6sFG7qOd4A?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -97,7 +99,7 @@
                     Opkvalificeret undervinsing
                 </h5>
                 <p>
-                    Vores videoer er produceret af specalister fra virkeligheden og nogle af de aller bedste spillere. 
+                    Vores videoer er produceret af specalister fra virkeligheden og nogle af de aller bedste spillere.
                     Vi strukturer vores kurser efter moderne læringsteorier for at maksimere læringsudbyttet.
                 </p>
             </div>
@@ -120,7 +122,7 @@
                     Vi sætter som den første digitale platform fokus på din personlige udvikling, mens du spiller. E-sport kan nemlig være med til at træne en række
                     kompetencer, du har stor gavn af at mestre i virkeligheden. Vi vil rette op på den misforståelse, der findes hos mange, at gaming er spild af tid.
 
-                    
+
                 </h2>
             </div>
         </div>
@@ -146,8 +148,8 @@
             <div class="feedback-container">
                 <h2>Er der noget, du synes vi skal vide?</h2>
                 <form asp-controller="Home" asp-action="Feedback" method="post" id="form-feedback" asp-route-returnUrl="Index">
-                    <input type="text" class="input-feedback" name="name" placeholder="navn *" required/>
-                    <input type="email" class="input-feedback form-control" name="fb_email" placeholder="email *" required/>
+                    <input type="text" class="input-feedback" name="name" placeholder="navn *" required />
+                    <input type="email" class="input-feedback form-control" name="fb_email" placeholder="email *" required />
 
                     <textarea class="feedback_textarea" name="comment" placeholder="besked *" required></textarea>
                     <input type="submit" class="btn-blue btn-feedback" value="Send" />
@@ -158,3 +160,4 @@
     </div>
 </section>
 
+<script src="~/js/particles.js" asp-append-version="true"></script>

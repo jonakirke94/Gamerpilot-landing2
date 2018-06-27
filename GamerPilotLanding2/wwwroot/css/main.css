@@ -194,13 +194,24 @@ a:hover {
   display: inline-block;
   border-radius: 0; }
 
+/* particle js */
+canvas {
+  display: inline-block;
+  vertical-align: bottom; }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 1000px;
+  background: #262935; }
+
+/**********/
 #hero {
   background-color: #262935;
-  /*background-image: url("/images/csgo_wallpaper.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;*/ }
+  min-height: 900px;
+  position: relative;
+  width: 100%; }
 
 .hero_left {
   margin: auto;
@@ -208,8 +219,7 @@ a:hover {
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
-  height: 100%;
-  background-color: transparent; }
+  height: 100%; }
 
 .hero_right {
   margin: auto;
@@ -217,8 +227,7 @@ a:hover {
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
-  height: 100%;
-  background-color: transparent; }
+  height: 100%; }
 
 h1 {
   font-family: 'Work Sans Light', helvetica, arial, sans-serif;
@@ -313,8 +322,8 @@ hr {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 640px;
-  max-height: 480px;
+  max-width: 1200px;
+  max-height: 720px;
   color: white;
   vertical-align: middle; }
 
@@ -400,8 +409,7 @@ iframe {
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
-  height: 100%;
-  background-color: transparent; }
+  height: 100%; }
 
 .feedback_textarea {
   width: 100%;
