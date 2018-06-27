@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1749px" height="2100px" viewBox="0 0 1749 2100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-86.0%" y="-86.0%" width="272.0%" height="272.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="4.29966518" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-24.1%" y="-24.1%" width="148.3%" height="148.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.44810268" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-54.3%" y="-54.3%" width="208.6%" height="208.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.44810268" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-54.3%" y="-54.3%" width="208.6%" height="208.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.44810268" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-54.3%" y="-54.3%" width="208.6%" height="208.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.44810268" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG">
+            <g id="//Bg" transform="translate(-531.000000, -401.000000)">
+                <g id="Group" transform="translate(371.000000, 0.000000)">
+                    <g id="stroke" transform="translate(696.108736, 2015.776026) scale(-1, -1) rotate(41.000000) translate(-696.108736, -2015.776026) translate(300.108736, 1410.276026)" stroke="#FFFFFF">
+                        <polygon id="Path-3" opacity="0.107223732" points="267 552.242241 406.310527 450 542 525.805065 458.202881 791 338.10498 791"></polygon>
+                        <polygon id="Path-5" opacity="0.10620471" points="338.148309 791 303 887.013202 361.529043 956 474 944.055691 458.104008 791"></polygon>
+                        <polygon id="Path-8" opacity="0.10620471" points="297.080069 242.313226 355.612984 18.9321454 650.806335 0 792 280.786671 746.214835 432.321108 542.342529 525.990234 406.173593 449.94414"></polygon>
+                        <polygon id="Path-4" opacity="0.10620471" points="130.763706 319.470682 296.788204 242 406.290039 450.165771 266.922852 552.247803 110.001543 419.25525"></polygon>
+                        <polygon id="Path-6" opacity="0.0729166667" points="303.040527 886.963867 265.84419 902.021374 258 959.667036 304.422471 1002 361.89917 956.259521"></polygon>
+                        <polygon id="Path-7" opacity="0.10620471" points="130.936035 319.412842 12.2985061 296.948687 0.565917969 406.588135 109.891846 419.052002"></polygon>
+                        <polygon id="Path-10" opacity="0.05" points="304.157227 1002.13574 362.345703 955.84375 474.175781 944.140625 634.384766 1013.41406 634.384766 1210.32031 383.183594 1210.32031 305.277344 1073.73242"></polygon>
+                    </g>
+                    <g id="Stroke-shapes-bg" transform="translate(351.000000, 0.000000)">
+                        <g>
+                            <g id="stroke" transform="translate(832.000000, 835.500000) rotate(41.000000) translate(-832.000000, -835.500000) translate(256.000000, 230.000000)" fill-rule="nonzero" fill="#FFFFFF" opacity="0.07">
+                                <path d="M698.477776,790.5 L817.836505,790.5 L901.400489,526.042875 L766.347254,450.593254 L627.579703,552.436996 L698.477776,790.5 Z M766.273801,449.406746 L902.599511,525.567256 L818.569257,791.5 L697.732185,791.5 L626.420297,552.047486 L766.273801,449.406746 Z" id="Path-3"></path>
+                                <path d="M697.798898,790.5 L818.554768,790.5 L834.548857,944.500215 L721.318865,956.525132 L662.430397,887.114689 L697.798898,790.5 Z M663.569603,886.911714 L721.739221,955.474868 L833.451143,943.611168 L817.653247,791.5 L698.497721,791.5 L663.569603,886.911714 Z" id="Path-5"></path>
+                                <path d="M766.547107,449.580048 L902.364574,525.429857 L1105.80137,431.960827 L1151.46366,280.833046 L1010.50823,0.520145842 L716.00517,19.4080199 L657.6129,242.252352 L766.547107,449.580048 Z M715.220798,18.4562709 L1011.10444,-0.520145842 L1152.53634,280.740296 L1106.6283,432.681389 L902.320485,526.550611 L765.800079,450.308232 L656.547238,242.3741 L715.220798,18.4562709 Z" id="Path-8"></path>
+                                <path d="M470.551622,419.066033 L626.945406,551.611503 L765.646871,450.017092 L656.567629,242.654681 L491.202183,319.817834 L470.551622,419.066033 Z M657.008779,241.345319 L766.933207,450.314451 L626.900298,552.884103 L469.451464,419.444467 L490.325229,319.123529 L657.008779,241.345319 Z" id="Path-4"></path>
+                                <path d="M663.187755,886.364853 L722.614456,956.329296 L664.400411,1002.65656 L617.469181,959.859657 L625.387845,901.666693 L663.187755,886.364853 Z M626.300534,902.376055 L618.530819,959.474415 L664.444531,1001.34344 L721.183884,956.189747 L662.8933,887.562881 L626.300534,902.376055 Z" id="Path-6"></path>
+                                <path d="M491.53076,319.016569 L470.287073,419.600299 L360.015921,407.02867 L371.859013,296.356584 L491.53076,319.016569 Z M490.341311,319.809115 L372.737999,297.54079 L361.115915,406.147599 L469.496618,418.503705 L490.341311,319.809115 Z" id="Path-7"></path>
+                                <path d="M372.521533,296.901855 L361.278963,407.245609 L216.961073,446.533335 L43.7241298,357.754453 L-0.612877859,207.181299 L207.681952,132.422449 L372.521533,296.901855 Z M207.423821,133.577551 L0.612877859,207.803821 L44.5621716,357.060258 L217.072293,445.466665 L360.353718,406.461097 L371.478467,297.273737 L207.423821,133.577551 Z" id="Path-9"></path>
+                                <path d="M665.775274,1073.59622 L743.474021,1209.82031 L993.884766,1209.82031 L993.884766,1013.7426 L834.097559,944.651542 L722.54283,956.325851 L664.661013,1002.37388 L665.775274,1073.59622 Z M722.148576,955.361649 L834.254004,943.629708 L994.884766,1013.08552 L994.884766,1210.82031 L742.893167,1210.82031 L664.779413,1073.86862 L663.65344,1001.89761 L722.148576,955.361649 Z" id="Path-10"></path>
+                            </g>
+                            <g id="Dots" transform="translate(328.000000, 467.000000)">
+                                <circle id="Oval" fill="#43D79D" cx="547" cy="158" r="4"></circle>
+                                <circle id="Oval" fill="#43D79D" cx="802" cy="522" r="4"></circle>
+                                <circle id="Oval" fill="#43D79D" opacity="0.5" cx="750" cy="376" r="3"></circle>
+                                <circle id="Oval" fill="#AFECD4" opacity="0.200000003" filter="url(#filter-1)" cx="724.5" cy="175.5" r="7.5"></circle>
+                                <circle id="Oval" fill="#AFECD4" opacity="0.100000001" filter="url(#filter-2)" cx="656" cy="515" r="9"></circle>
+                                <circle id="Oval" fill="#AFECD4" opacity="0.300000012" filter="url(#filter-3)" cx="331" cy="21" r="4"></circle>
+                                <circle id="Oval" fill="#AFECD4" opacity="0.300000012" filter="url(#filter-4)" cx="861" cy="249" r="4"></circle>
+                                <circle id="Oval" fill="#AFECD4" opacity="0.300000012" filter="url(#filter-5)" cx="4" cy="82" r="4"></circle>
+                                <circle id="Oval" fill="#43D79D" cx="552.5" cy="2.5" r="2.5"></circle>
+                                <circle id="Oval" fill="#43D79D" opacity="0.400000006" cx="475.5" cy="589.5" r="2.5"></circle>
+                                <circle id="Oval" fill="#43D79D" cx="385" cy="639" r="2"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

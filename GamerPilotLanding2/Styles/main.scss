@@ -263,9 +263,7 @@ canvas {
     background: url("/images/bg-hero-shapes.svg");
 }
 
-
 /**********/
-
 #hero {
     background-color: $main;
     min-height: 900px;
@@ -644,8 +642,18 @@ footer {
 }
 
 #intro {
-    background-color: $main;
+    background-color: white;
     @include parent-section;
+}
+
+#intro-bg {
+    background: url("/images/bg-stroke.svg") 100% 0 no-repeat,url("/images/bg-dots.svg") 0 200px no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#intro h1 {
+    padding: 100px;
 }
 
 @mixin box {
