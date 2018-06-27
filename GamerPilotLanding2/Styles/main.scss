@@ -355,23 +355,32 @@ h5 {
 
 .vid {
     background-color: $grey;
-    margin: auto;
+    text-align: center;
     margin-top: 200px;
-    height: 500px;
+    height: 400px;
+    width: 500px;
 }
 
 .fa-play-circle {
-    margin-left: 20px;
-    margin-bottom: 10px;
     color: $white;
-    font-size: 58px !important;
+    font-size: 52px !important;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .playbox {
+    background: url(https://picsum.photos/400/500);
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
-    margin-left: 170px;
-    padding-top: 200px !important;
+    text-align: center;
+    padding-top: 35%;
+    height: 400px;
+    width: 500px;
+}
+
+.playbox h2 {
+    font-weight: bold;
 }
 
     .popup__overlay {
