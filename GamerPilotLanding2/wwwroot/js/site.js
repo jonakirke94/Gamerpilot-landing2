@@ -13,3 +13,14 @@ $('#return-to-top').click(function () {      // When arrow is clicked
 });
 
 
+/* Navbar background on scroll*/
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('changeBg')
+        }
+        if ($(this).scrollTop() < 50) {
+            $('.navbar').removeClass('changeBg')
+        }
+    });
+});

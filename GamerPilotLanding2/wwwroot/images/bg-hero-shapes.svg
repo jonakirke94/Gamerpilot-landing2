@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1151px" height="1000px" viewBox="0 0 1151 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Hero-shapes-solid@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG" transform="translate(-478.000000, 0.000000)">
+            <g id="//Bg" transform="translate(-531.000000, -401.000000)">
+                <g id="Hero-shapes-solid" transform="translate(1008.000000, 190.000000)">
+                    <g>
+                        <polygon id="Path-3" fill="#004E54" opacity="0.400000006" points="627 552.242241 766.310527 450 902 525.805065 818.202881 791 698.10498 791"></polygon>
+                        <polygon id="Path-5" fill="#005156" opacity="0.200000003" points="698.148309 791 663 887.013202 721.529043 956 834 944.055691 818.104008 791"></polygon>
+                        <polygon id="Path-8" fill="#05C6B9" opacity="0.140000001" points="656.867188 242.201172 715.612984 18.9321454 1010.80634 0 1152 280.786671 1106.21483 432.321108 902.342529 525.990234 766.173593 449.94414"></polygon>
+                        <path d="M490.763706,319.470682 L656.788204,242 L766.290039,450.165771 L626.922852,552.247803 C521.978005,466.031042 469.670902,421.700191 470.001543,419.25525 C470.332185,416.810308 477.252906,383.548785 490.763706,319.470682 Z" id="Path-4" fill="#00B3BA" opacity="0.100000001"></path>
+                        <polygon id="Path-6" fill="#004846" opacity="0.534624085" points="663.040527 886.963867 625.84419 902.021374 618 959.667036 664.422471 1002 721.89917 956.259521"></polygon>
+                        <polygon id="Path-7" fill="#009999" opacity="0.149999991" points="490.936035 319.412842 372.443115 297.825439 360.565918 406.588135 469.891846 419.052002"></polygon>
+                        <polygon id="Path-9" fill="#0D8A84" opacity="0.149999991" points="372 297.087796 207.552886 133 0 207.49256 44.1431507 357.407356 217.016683 446 360.816341 406.853353"></polygon>
+                        <polygon id="Path-10" fill="#004E44" opacity="0.143851902" points="664.157227 1002.13574 722.345703 955.84375 834.175781 944.140625 994.384766 1013.41406 994.384766 1210.32031 743.183594 1210.32031 665.277344 1073.73242"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

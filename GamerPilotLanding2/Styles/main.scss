@@ -54,19 +54,21 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
-    padding-top: 60px;
 }
 
 
 /* navbar */
 
-.navbar {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-    background: $main;
+.changeBg {
+    background-color: $main;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
 }
 
 .navbar-form {
+    margin-top: 0px !important;
+    padding-top: 1rem !important;
     padding-right: 150px;
 }
 
@@ -76,7 +78,7 @@ body {
 }
 
 .navbar-brand {
-    padding-top: 0;
+    padding-top: 1rem !important;
     padding-bottom: 0;
 }
 
@@ -149,7 +151,7 @@ a:hover {
 }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 500px;
+    max-height: 500px !important;
 }
 
 
@@ -258,14 +260,13 @@ canvas {
     width: 100%;
     height: 100%;
     max-height: 1000px;
-    background: $main;
+    background: url("/images/bg-hero-shapes.svg");
 }
 
 
 /**********/
 
 #hero {
-
     background-color: $main;
     min-height: 900px;
     position: relative;
@@ -746,7 +747,16 @@ footer {
 #video-structure {
     background-color: $grey;
     @include parent-section;
+   
 }
+
+.bg-waves {
+    background: url("/images/bg-waves.svg");
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
 
 .block-blue {
     @include block;
@@ -1024,4 +1034,42 @@ footer {
     display: none;
 }
 
-/****** */
+/* subscribe now */
+
+.subscribe-now {
+    background-image: linear-gradient(135deg,$main,lighten($main, 20%));
+    text-align: center;
+    height: 400px;
+    width: 100%;
+
+}
+
+.subscribe-bg {
+    background-image: url("/images/bg-subscribe.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+.parent-sub {
+    border: none;
+    padding: 0 25px;
+    color: #414351;
+    font-size: 15px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    height: 48px;
+    display: inline;
+    max-width: 600px;
+}
+
+.btn-parentsub {
+    margin-left: -5px;
+    display: inline-block;
+    border-radius: 0;
+}

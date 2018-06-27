@@ -96,6 +96,13 @@ function createTour() {
         advanceOn: '#shep-step10 click'
     });
 
+    tour.addStep('Theory2', {
+        title: 'The Zone for Nearest Development',
+        text: 'We make the process easier by helping the children navigate in the videos </br> and present relevant material',
+        attachTo: '#shep-step10 top',
+        advanceOn: '#shep-step11 click'
+    });
+
     //create complete button 
     buttons = [];
     buttons.push({
@@ -106,10 +113,10 @@ function createTour() {
         }
     });
 
-    tour.addStep('Theory2', {
-        title: 'The Zone for Nearest Development',
-        text: 'We make the process easier by helping the children navigate in the videos </br> and present relevant material',
-        attachTo: '#shep-step10 top',
+    tour.addStep('Subscribe', {
+        title: 'Subscribe',
+        text: 'Did you know 4/5 parents are ready to support their child\'s </br> e-sports ambitions on the same level as regular sports?',
+        attachTo: '#shep-step11 top',
         buttons: this.buttons
     });
 
