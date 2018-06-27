@@ -799,3 +799,20 @@ footer {
     right: auto; } }
 
 /**************/
+/* return to top*/
+.fa-arrow-alt-circle-up {
+  font-size: 38px !important;
+  color: #4a90e2; }
+
+#return-to-top {
+  z-index: 99999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  display: none; }
+
+/****** */

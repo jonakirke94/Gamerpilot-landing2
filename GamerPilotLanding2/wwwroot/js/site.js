@@ -1,41 +1,4 @@
-﻿/* USER TOUR */
-
-function test() {
-    console.log('Hello world!')
-}
-
-function startTour() {
-    console.log('Started tour')
-
-    let tour = new Shepherd.Tour({
-        defaults: {
-            classes: 'shepherd-theme-arrows',
-            scrollTo: true,
-        }
-    });
-
-    tour.addStep('step1', {
-        title: 'Example Shepherd',
-        text: 'Creating a Shepherd is easy too! Just create ...',
-        attachTo: '.quick-box top',
-        advanceOn: '#experts click'
-    });
-
-    tour.addStep('step2', {
-        title: 'Example Shepherd',
-        text: 'Creating a Shepherd is easy too! Just create ...',
-        attachTo: '.test bottom',
-        advanceOn: '.test1 click'
-    });
-
-    tour.start();
-}
-
-
-
-/***************/
-
-
+﻿
 
 /* Learn more slide */
 $(function () {
@@ -90,4 +53,18 @@ p.click(function (event) {
 $(".popup__close").click(function () {
     p.css("visibility", "hidden").css("opacity", "0");
     toggleVideo("hide");
+});
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop: 0                       // Scroll to top of body
+    }, 500);
 });

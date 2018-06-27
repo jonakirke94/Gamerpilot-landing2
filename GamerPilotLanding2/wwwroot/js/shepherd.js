@@ -11,6 +11,8 @@ const {
 
 let Shepherd = new Evented;
 
+
+
 function isUndefined(obj) {
   return typeof obj === 'undefined'
 };
