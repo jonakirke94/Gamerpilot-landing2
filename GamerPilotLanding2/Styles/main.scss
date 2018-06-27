@@ -642,18 +642,26 @@ footer {
 }
 
 #intro {
-    background-color: white;
+    background-color: $main;
     @include parent-section;
 }
 
 #intro-bg {
-    background: url("/images/bg-stroke.svg") 100% 0 no-repeat,url("/images/bg-dots.svg") 0 200px no-repeat;
+    background: url("/images/bg-dots.svg") repeat;
     height: 100%;
     width: 100%;
 }
 
 #intro h1 {
     padding: 100px;
+}
+
+
+@media screen and (max-width: $mobile) {
+    #intro h1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @mixin box {

@@ -519,12 +519,17 @@ footer {
   padding: 50px; }
 
 #intro-bg {
-  background: url("/images/bg-dots.svg");
+  background: url("/images/bg-dots.svg") repeat;
   height: 100%;
   width: 100%; }
 
 #intro h1 {
   padding: 100px; }
+
+@media screen and (max-width: 767px) {
+  #intro h1 {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 .quick-box {
   margin: auto;
