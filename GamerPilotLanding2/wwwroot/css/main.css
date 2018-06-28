@@ -885,3 +885,25 @@ footer {
   margin-left: -5px;
   display: inline-block;
   border-radius: 0; }
+
+/* confirmation messages */
+/*background-image: linear-gradient(-136deg,$highlight,#002e34)*/
+.notifications {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  text-align: center;
+  color: white;
+  font-family: 'Work Sans Med', helvetica, arial, sans-serif;
+  visibility: hidden; }
+
+.notification-error {
+  padding: 25px;
+  background-image: linear-gradient(-136deg, #e74c3c, #002e34); }
+
+.notification-success {
+  padding: 25px;
+  background-image: linear-gradient(-136deg, #1f69c1, #002e34); }

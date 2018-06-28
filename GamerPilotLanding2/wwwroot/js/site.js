@@ -24,3 +24,12 @@ $(function () {
         }
     });
 });
+
+/* Notifications */
+
+if ($('.js-notify').is(':visible')) {
+    setTimeout(function () {
+        $('.js-notify').fadeTo(500, 0);
+        $('#js-visible').hide();
+    }, 5000);
+}

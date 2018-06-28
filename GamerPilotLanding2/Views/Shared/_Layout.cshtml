@@ -56,6 +56,27 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
+
+
+    <!--Notifications -->
+    @{
+        <div class="notifications" id="js-visible">
+            @if (TempData.ContainsKey("Error"))
+            {
+                <div class="notification-error js-notify">@TempData["Error"]</div>
+                <script>
+                    document.getElementById("js-visible").style.visibility = "visible";
+                </script>
+            }
+            else if (TempData.ContainsKey("Success"))
+            {
+                <div class="notification-success js-notify"> @TempData["Success"]</div>
+                <script>
+                    document.getElementById("js-visible").style.visibility = "visible";
+                </script>}
+        </div>
+    }
+
     <div class="container-fluid">
 
         <!-- Return to Top -->
