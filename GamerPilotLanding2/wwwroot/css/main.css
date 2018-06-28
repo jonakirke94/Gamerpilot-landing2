@@ -217,7 +217,7 @@ canvas {
 
 .hero_left {
   margin: auto;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
@@ -225,7 +225,7 @@ canvas {
 
 .hero_right {
   margin: auto;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
@@ -290,12 +290,6 @@ hr {
   height: 400px;
   width: 500px; }
 
-.fa-play-circle {
-  color: #fff;
-  font-size: 52px !important;
-  cursor: pointer;
-  padding-right: 10px; }
-
 .playbox {
   background: url(https://picsum.photos/400/500);
   background-repeat: no-repeat;
@@ -359,24 +353,6 @@ iframe {
 #features {
   text-align: center; }
 
-.fa-code-branch {
-  margin-top: 30px;
-  font-size: 38px;
-  display: block;
-  color: #4a90e2; }
-
-.fa-chalkboard-teacher {
-  margin-top: 30px;
-  font-size: 38px;
-  display: block;
-  color: #1f69c1; }
-
-.fa-user-cog {
-  margin-top: 30px;
-  font-size: 38px;
-  display: block;
-  color: #0d2d53; }
-
 .feature {
   padding-left: 100px;
   padding-right: 100px; }
@@ -389,7 +365,6 @@ iframe {
 /***************/
 /*** Concept ***/
 #concept {
-  /*background-image: linear-gradient(135deg,$main,lighten($main, 20%));*/
   background-image: linear-gradient(-136deg, #1f69c1, #002e34); }
 
 #concept::after {
@@ -420,6 +395,26 @@ iframe {
   background-size: contain; }
 
 /***************/
+#motivation::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 130px;
+  top: auto;
+  bottom: -65px;
+  margin-bottom: -120px;
+  background: url("/images/connector.svg") 0 0 no-repeat; }
+
+#visibility::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 130px;
+  top: auto;
+  bottom: -65px;
+  margin-bottom: -120px;
+  background: url("/images/connector.svg") 0 0 no-repeat; }
+
 /*** Feedback ***/
 #feedback {
   height: 840px;
@@ -427,11 +422,12 @@ iframe {
 
 .feedback-container {
   margin: auto;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-bottom: 200px;
   max-width: 600px;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-top: 190px; }
 
 .feedback_textarea {
   width: 100%;
@@ -591,41 +587,6 @@ footer {
 #learning-wheel > div > h4 {
   color: #1f69c1; }
 
-.fa-globe-americas {
-  margin-top: 130px;
-  font-size: 158px;
-  color: #262935; }
-
-.fa-sort-amount-down {
-  margin-top: 130px;
-  color: #1f69c1;
-  font-size: 158px; }
-
-.fa-child {
-  margin-top: 100px;
-  font-size: 158px;
-  color: #4a90e2; }
-
-.fa-eye {
-  margin-top: 100px;
-  font-size: 158px;
-  color: #4a90e2; }
-
-.fa-assistive-listening-systems {
-  margin-top: 100px;
-  font-size: 158px;
-  color: #1f69c1; }
-
-.fa-boxes {
-  margin-top: 200px;
-  font-size: 158px;
-  color: #262935; }
-
-.fa-diagnoses {
-  margin-top: 130px;
-  font-size: 158px;
-  color: #1f69c1; }
-
 #video-structure {
   background-color: #474b57;
   text-align: center;
@@ -679,14 +640,6 @@ footer {
 
 #experts h1 {
   color: #262935; }
-
-.fa-angle-double-down {
-  color: #262935;
-  font-size: 28px;
-  padding-bottom: 60px; }
-
-.fa-exp {
-  font-size: 38px; }
 
 /************/
 /* timeline course structure */
@@ -853,10 +806,6 @@ footer {
 
 /**************/
 /* return to top*/
-.fa-arrow-alt-circle-up {
-  font-size: 38px !important;
-  color: #4a90e2; }
-
 #return-to-top {
   z-index: 99999;
   position: fixed;
@@ -923,3 +872,87 @@ footer {
 .notification-success {
   padding: 25px;
   background-image: linear-gradient(-136deg, #1f69c1, #002e34); }
+
+/* font awesome icons */
+.fa-code-branch {
+  margin-top: 30px;
+  font-size: 38px;
+  display: block;
+  color: #4a90e2; }
+
+.fa-chalkboard-teacher {
+  margin-top: 30px;
+  font-size: 38px;
+  display: block;
+  color: #1f69c1; }
+
+.fa-user-cog {
+  margin-top: 30px;
+  font-size: 38px;
+  display: block;
+  color: #0d2d53; }
+
+.fa-play-circle {
+  color: #fff;
+  font-size: 52px !important;
+  cursor: pointer;
+  padding-right: 10px; }
+
+.fa-globe-americas {
+  margin-top: 130px;
+  font-size: 158px;
+  color: #262935; }
+
+.fa-sort-amount-down {
+  margin-top: 130px;
+  color: #1f69c1;
+  font-size: 158px; }
+
+.fa-child {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #4a90e2; }
+
+@media screen and (max-width: 767px) {
+  .fa-child {
+    padding-bottom: 30px; }
+  .fa-eye {
+    padding-bottom: 30px; } }
+
+.fa-eye {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #4a90e2; }
+
+.fa-assistive-listening-systems {
+  margin-top: 100px;
+  font-size: 158px;
+  color: #1f69c1; }
+
+.fa-boxes {
+  margin-top: 200px;
+  font-size: 158px;
+  color: #262935; }
+
+.fa-diagnoses {
+  margin-top: 130px;
+  font-size: 158px;
+  color: #1f69c1; }
+
+.fa-angle-double-down {
+  color: #262935;
+  font-size: 28px;
+  padding-bottom: 60px; }
+
+.fa-exp {
+  font-size: 38px; }
+
+.fa-arrow-alt-circle-up {
+  font-size: 38px !important;
+  color: #4a90e2; }
+
+.fa-user-tie {
+  color: #4a90e2; }
+
+.fa-user-plus {
+  color: #4a90e2; }

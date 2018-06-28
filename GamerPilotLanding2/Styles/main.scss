@@ -273,7 +273,7 @@ canvas {
 
 @mixin hero {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
     max-width: 600px;
     width: 100%;
@@ -360,12 +360,6 @@ h5 {
     width: 500px;
 }
 
-.fa-play-circle {
-    color: $white;
-    font-size: 52px !important;
-    cursor: pointer;
-    padding-right: 10px;
-}
 
 .playbox {
     background: url(https://picsum.photos/400/500);
@@ -442,26 +436,6 @@ h5 {
     text-align: center;
 }
 
-@mixin fa-point {
-    margin-top: 30px;
-    font-size: 38px;
-    display: block;
-}
-
-.fa-code-branch {
-    @include fa-point;
-    color: $blue;
-}
-
-.fa-chalkboard-teacher {
-    @include fa-point;
-    color: $highlight;
-}
-
-.fa-user-cog {
-    @include fa-point;
-    color: $darkblue;
-}
 
 .feature {
     padding-left: 100px;
@@ -480,7 +454,6 @@ h5 {
 
 /*** Concept ***/
 #concept {
-    /*background-image: linear-gradient(135deg,$main,lighten($main, 20%));*/
     background-image: linear-gradient(-136deg,$highlight,#002e34);
 }
 
@@ -518,6 +491,28 @@ h5 {
 
 /***************/
 
+#motivation::after {
+    content: "";
+    display: inline-block;
+    width: 34px;
+    height: 130px;
+    top: auto;
+    bottom: -65px;
+    margin-bottom: -120px;
+    background: url("/images/connector.svg") 0 0 no-repeat;
+}
+
+#visibility::after {
+    content: "";
+    display: inline-block;
+    width: 34px;
+    height: 130px;
+    top: auto;
+    bottom: -65px;
+    margin-bottom: -120px;
+    background: url("/images/connector.svg") 0 0 no-repeat;
+}
+
 /*** Feedback ***/
 
 #feedback {
@@ -527,6 +522,7 @@ h5 {
 
 .feedback-container {
     @include hero;
+    margin-top: 190px;
 }
 
 .feedback_textarea {
@@ -740,47 +736,7 @@ footer {
     color: $highlight;
 }
 
-.fa-globe-americas {
-    margin-top: 130px;
-    font-size: 158px;
-    color: $main;
-}
 
-.fa-sort-amount-down {
-    margin-top: 130px;
-    color: $highlight;
-    font-size: 158px;
-}
-
-.fa-child {
-        margin-top: 100px;
-        font-size: 158px;
-        color: $blue;
-}
-
-.fa-eye {
-    margin-top: 100px;
-    font-size: 158px;
-    color: $blue;
-}
-
-.fa-assistive-listening-systems {
-    margin-top: 100px;
-    font-size: 158px;
-    color: $highlight;
-}
-
-.fa-boxes {
-    margin-top: 200px;
-    font-size: 158px;
-    color: $main;
-}
-
-.fa-diagnoses {
-    margin-top: 130px;
-    font-size: 158px;
-    color: $highlight;
-}
 
 #video-structure {
     background-color: $grey;
@@ -839,15 +795,7 @@ footer {
     color: $main;
 }
 
-.fa-angle-double-down {
-    color: $main;
-    font-size: 28px;
-    padding-bottom: 60px;
-}
 
-.fa-exp {
-    font-size: 38px;
-}
 
 /************/
 /* timeline course structure */
@@ -1055,10 +1003,7 @@ footer {
 
 /* return to top*/
 
-.fa-arrow-alt-circle-up {
-    font-size: 38px !important;
-    color: $blue;
-}
+
 
 #return-to-top {
     z-index: 99999;
@@ -1138,4 +1083,112 @@ footer {
 .notification-success {
     padding: 25px;
     background-image: linear-gradient(-136deg,$highlight,#002e34)
+}
+
+
+/* font awesome icons */
+
+
+@mixin fa-point {
+    margin-top: 30px;
+    font-size: 38px;
+    display: block;
+}
+
+.fa-code-branch {
+    @include fa-point;
+    color: $blue;
+}
+
+.fa-chalkboard-teacher {
+    @include fa-point;
+    color: $highlight;
+}
+
+.fa-user-cog {
+    @include fa-point;
+    color: $darkblue;
+}
+
+
+.fa-play-circle {
+    color: $white;
+    font-size: 52px !important;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.fa-globe-americas {
+    margin-top: 130px;
+    font-size: 158px;
+    color: $main;
+}
+
+.fa-sort-amount-down {
+    margin-top: 130px;
+    color: $highlight;
+    font-size: 158px;
+}
+
+.fa-child {
+    margin-top: 100px;
+    font-size: 158px;
+    color: $blue;
+}
+
+@media screen and (max-width: $mobile) {
+    .fa-child {
+        padding-bottom: 30px;
+    }
+
+    .fa-eye {
+        padding-bottom: 30px;
+    }
+}
+
+.fa-eye {
+    margin-top: 100px;
+    font-size: 158px;
+    color: $blue;
+}
+
+.fa-assistive-listening-systems {
+    margin-top: 100px;
+    font-size: 158px;
+    color: $highlight;
+}
+
+.fa-boxes {
+    margin-top: 200px;
+    font-size: 158px;
+    color: $main;
+}
+
+.fa-diagnoses {
+    margin-top: 130px;
+    font-size: 158px;
+    color: $highlight;
+}
+
+.fa-angle-double-down {
+    color: $main;
+    font-size: 28px;
+    padding-bottom: 60px;
+}
+
+.fa-exp {
+    font-size: 38px;
+}
+
+.fa-arrow-alt-circle-up {
+    font-size: 38px !important;
+    color: $blue;
+}
+
+.fa-user-tie {
+    color: $blue;
+}
+
+.fa-user-plus {
+    color: $blue;
 }
