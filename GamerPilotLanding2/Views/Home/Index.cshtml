@@ -48,23 +48,38 @@
                 </div>
             </div>
         </div>
+
+        <!-- Subscribtion -->
+            <div class="col-md-12 teaser-sub">
+                <div>
+                    <h3>Kom på vores venteliste for at få tidlig adgang</h3>
+                    <form asp-controller="Home" asp-action="Subscribe" method="post" class="form-inline" asp-route-returnUrl="Index">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control parent-sub" placeholder="email ">
+                        </div>
+                        <button type="submit" class="btn-blue btn-parentsub">Kom på listen</button>
+                    </form>
+                </div>
+
+         
+        </div>
     </div>
 </section>
 
 <!-- Subscribtion only shown on mobile -->
-<section class="visible-xs" id="subscribe">
-    <div class="row">
-        <div class="col-xs-12">
-            <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="Index">
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
-                </div>
-                <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
-            </form>
+@*<section class="visible-xs" id="subscribe">
+        <div class="row">
+            <div class="col-xs-12">
+                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="Index">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
+                    </div>
+                    <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
+                </form>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>*@
 
 <!-- Selling points -->
 <section id="features">
@@ -107,23 +122,7 @@
     </div>
 </section>
 
-<!-- Subscribe now-->
-<section class="subscribe-now">
-    <div class="row subscribe-bg">
-        <div class="col-md-12">
-            <div style="margin-top: 150px;">
-                <h3>Bliv blandt de første, der får adgang</h3>
-                <form asp-controller="Home" asp-action="Subscribe" method="post" class="form-inline" asp-route-returnUrl="Parents">
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control parent-sub" placeholder="email ">
-                    </div>
-                    <button type="submit" class="btn-blue btn-parentsub">Indsend</button>
-                </form>
-            </div>
 
-        </div>
-    </div>
-</section>
 
 <!-- Learn more section -->
 <section id="concept">
@@ -155,7 +154,7 @@
 
         </div>
     </div>
-    
+
 </section>
 
 
@@ -182,6 +181,26 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+<!-- Subscribe now-->
+<section class="subscribe-now">
+    <div class="row subscribe-bg">
+        <div class="col-md-12">
+            <div style="margin-top: 150px;">
+                <h3>
+                    Kom på vores venteliste for at få tidlig adgang
+                </h3>
+                <form asp-controller="Home" asp-action="Subscribe" method="post" class="form-inline" asp-route-returnUrl="Index">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control parent-sub" placeholder="email ">
+                    </div>
+                    <button type="submit" class="btn-blue btn-parentsub">Kom på listen</button>
+                </form>
+            </div>
+
+        </div>
     </div>
 </section>
 

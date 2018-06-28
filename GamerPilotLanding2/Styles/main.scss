@@ -282,8 +282,8 @@ canvas {
 
 @mixin hero {
     margin: auto;
-    margin-top: 300px;
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 100px;
     max-width: 600px;
     width: 100%;
     height: 100%;
@@ -1081,6 +1081,12 @@ footer {
 
 }
 
+.teaser-sub {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
 .subscribe-bg {
     background-image: url("/images/bg-subscribe.png");
     background-repeat: no-repeat;
@@ -1102,7 +1108,6 @@ footer {
     line-height: 1.15;
     height: 48px;
     display: inline;
-    max-width: 600px;
 }
 
 .btn-parentsub {
@@ -1110,139 +1115,149 @@ footer {
     display: inline-block;
     border-radius: 0;
 }
-
-
-/* confirmation messages */
-
-/*background-image: linear-gradient(-136deg,$highlight,#002e34)*/
-;
-.notifications {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-    text-align: center;
-    color: white;
-    font-family: 'Work Sans Med', helvetica, arial, sans-serif;
-    visibility: hidden;
-}
-
-.notification-error {
-    padding: 25px;
-    background-image: linear-gradient(-136deg,#e74c3c,#002e34)
-}
-
-.notification-success {
-    padding: 25px;
-    background-image: linear-gradient(-136deg,$highlight,#002e34)
-}
-
-
-/* font awesome icons */
-
-
-@mixin fa-point {
-    margin-top: 30px;
-    font-size: 38px;
-    display: block;
-}
-
-.fa-code-branch {
-    @include fa-point;
-    color: $blue;
-}
-
-.fa-chalkboard-teacher {
-    @include fa-point;
-    color: $highlight;
-}
-
-.fa-user-cog {
-    @include fa-point;
-    color: $darkblue;
-}
-
-
-.fa-play-circle {
-    color: $white;
-    font-size: 52px !important;
-    cursor: pointer;
-    padding-right: 10px;
-}
-
-.fa-globe-americas {
-    margin-top: 130px;
-    font-size: 158px;
-    color: $main;
-}
-
-.fa-sort-amount-down {
-    margin-top: 130px;
-    color: $highlight;
-    font-size: 158px;
-}
-
-.fa-child {
-    margin-top: 100px;
-    font-size: 158px;
-    color: $blue;
-}
-
 @media screen and (max-width: $mobile) {
+    .form-group {
+        margin-bottom: 0px;
+        }
+
+    .btn-parentsub {
+        margin-left: 0px;
+        width: 100%;
+    }
+    }
+
+    /* confirmation messages */
+
+    /*background-image: linear-gradient(-136deg,$highlight,#002e34)*/
+    ;
+
+    .notifications {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 999999;
+        text-align: center;
+        color: white;
+        font-family: 'Work Sans Med', helvetica, arial, sans-serif;
+        visibility: hidden;
+    }
+
+    .notification-error {
+        padding: 25px;
+        background-image: linear-gradient(-136deg,#e74c3c,#002e34)
+    }
+
+    .notification-success {
+        padding: 25px;
+        background-image: linear-gradient(-136deg,$highlight,#002e34)
+    }
+
+
+    /* font awesome icons */
+
+
+    @mixin fa-point {
+        margin-top: 30px;
+        font-size: 38px;
+        display: block;
+    }
+
+    .fa-code-branch {
+        @include fa-point;
+        color: $blue;
+    }
+
+    .fa-chalkboard-teacher {
+        @include fa-point;
+        color: $highlight;
+    }
+
+    .fa-user-cog {
+        @include fa-point;
+        color: $darkblue;
+    }
+
+
+    .fa-play-circle {
+        color: $white;
+        font-size: 52px !important;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    .fa-globe-americas {
+        margin-top: 130px;
+        font-size: 158px;
+        color: $main;
+    }
+
+    .fa-sort-amount-down {
+        margin-top: 130px;
+        color: $highlight;
+        font-size: 158px;
+    }
+
     .fa-child {
-        padding-bottom: 30px;
+        margin-top: 100px;
+        font-size: 158px;
+        color: $blue;
+    }
+
+    @media screen and (max-width: $mobile) {
+        .fa-child {
+            padding-bottom: 30px;
+        }
+
+        .fa-eye {
+            padding-bottom: 30px;
+        }
     }
 
     .fa-eye {
-        padding-bottom: 30px;
+        margin-top: 100px;
+        font-size: 158px;
+        color: $blue;
     }
-}
 
-.fa-eye {
-    margin-top: 100px;
-    font-size: 158px;
-    color: $blue;
-}
+    .fa-assistive-listening-systems {
+        margin-top: 100px;
+        font-size: 158px;
+        color: $highlight;
+    }
 
-.fa-assistive-listening-systems {
-    margin-top: 100px;
-    font-size: 158px;
-    color: $highlight;
-}
+    .fa-boxes {
+        margin-top: 200px;
+        font-size: 158px;
+        color: $main;
+    }
 
-.fa-boxes {
-    margin-top: 200px;
-    font-size: 158px;
-    color: $main;
-}
+    .fa-diagnoses {
+        margin-top: 130px;
+        font-size: 158px;
+        color: $highlight;
+    }
 
-.fa-diagnoses {
-    margin-top: 130px;
-    font-size: 158px;
-    color: $highlight;
-}
+    .fa-angle-double-down {
+        color: $main;
+        font-size: 28px;
+        padding-bottom: 60px;
+    }
 
-.fa-angle-double-down {
-    color: $main;
-    font-size: 28px;
-    padding-bottom: 60px;
-}
+    .fa-exp {
+        font-size: 38px;
+    }
 
-.fa-exp {
-    font-size: 38px;
-}
+    .fa-arrow-alt-circle-up {
+        font-size: 38px !important;
+        color: $blue;
+    }
 
-.fa-arrow-alt-circle-up {
-    font-size: 38px !important;
-    color: $blue;
-}
+    .fa-user-tie {
+        color: $blue;
+    }
 
-.fa-user-tie {
-    color: $blue;
-}
-
-.fa-user-plus {
-    color: $blue;
-}
+    .fa-user-plus {
+        color: $blue;
+    }
