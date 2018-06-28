@@ -131,6 +131,9 @@ body {
 .nav-links {
     font-family: 'Work Sans Reg';
     cursor: pointer;
+    margin-top: .5rem !important;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .nav li:last-child {
@@ -164,7 +167,13 @@ a:hover {
 @media screen and (max-width: $tablet) {
     .navbar-form {
         padding-right: 15px;
-        
+        max-width: 375px;
+    
+    }
+
+    .input-sub {
+        float: left;
+        width: 200px !important;
     }
 
     .btn-sub {
@@ -407,20 +416,64 @@ h5 {
         vertical-align: middle;
     }
 
+    @media screen and (max-width: $tablet) {
+        .popup {
+            max-width: 700px;
+            max-height: 400px;
+        }
+
+        .vid {
+            height: 300px;
+            width: 100%;
+        }
+
+        .playbox {
+            height: 300px;
+            width: 100%;
+            padding-top: 20%;
+        }
+    }
+
+@media screen and (max-width: $mobile) {
+    .vid {
+        height: 300px;
+        width: 100%;
+    }
+
+    .playbox {
+        height: 300px;
+        width: 100%;
+        padding-top: 35%;
+    }
+
+    .hero_right {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .hero_left {
+        margin-bottom: 50px;
+    }
+
+    .popup {
+        max-width: 300px !important;
+        max-height: 240px !important;
+    }
+}
+
     .popup-form__row {
         margin: 1em 0;
     }
 
-    .popup__close {
-        display: block;
-        position: absolute;
-        top: 5px;
-        right: 8px;
-        cursor: pointer;
-        font-size: 16px;
-        color: $white;
-        text-decoration: none;
-    }
+.popup__close {
+    font-size: 32px;
+    position: absolute;
+    z-index: 10;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
 
 
     iframe {
@@ -485,6 +538,7 @@ h5 {
     max-width: 600px;
     width: 600px;
     background-image: url("/images/gp-brand.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
