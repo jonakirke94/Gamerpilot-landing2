@@ -5,18 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] GamerPilot</title>
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/main.min.css" />
-
-    <link rel="stylesheet" href="~/css/shepherd-theme-arrows.css" />
     <link rel="stylesheet" href="~/vendor.min.css" />
 
-
-
-
-
-
-
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- fav icon in browser -->
     <link rel="icon" type="image/x-icon" href="/images/gp-brand.png">
@@ -39,85 +31,37 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a asp-controller="Home" asp-action="Index" class="nav-links">Home</a></li>
-
                 <li><a asp-controller="Home" asp-action="Parents" class="nav-links">Til forældrene</a></li>
             </ul>
 
             @{
 
                 //Get the current action name, so we can redirect to it on submit
-                @*var action = ViewContext.RouteData.Values["Action"];
-                    <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control input-sub" placeholder="bliv blandt de første ">
-                        </div>
-                        <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
-                    </form>*@
+                var action = ViewContext.RouteData.Values["Action"];
+                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
+                    </div>
+                    <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
+                </form>
 
             }
 
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-
-    <!--Notifications -->
-    @{
-        <div class="notifications" id="js-visible">
-            @if (TempData.ContainsKey("Error"))
-            {
-                <div class="notification-error js-notify">@TempData["Error"]</div>
-                <script>
-                    document.getElementById("js-visible").style.visibility = "visible";
-                </script>
-            }
-            else if (TempData.ContainsKey("Success"))
-            {
-                <div class="notification-success js-notify"> @TempData["Success"]</div>
-                <script>
-                    document.getElementById("js-visible").style.visibility = "visible";
-                </script>}
-        </div>
-    }
-
-    <div class="container-fluid">
-
-        <!-- Return to Top -->
-        <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-alt-circle-up"></i></a>
-
+    <div class="container-fluid body-content">
         @RenderBody()
+        <hr />
         <footer>
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="col-md-12" style="text-align: center">
-                        <h2>Vi er stadig ved at indsamle data. Har du 2 min?</h2>
-                        <a target="_blank" href="https://da.surveymonkey.com/r/5HZWRMM" class="btn-blue btn-footer" style="margin-right: 10px;">Spørgeskema (unge)</a>
-                        <a target="_blank" href="https://da.surveymonkey.com/r/5H6KYT8" class="btn-blue btn-footer">Spørgeskema (forældre)</a>
-                    </div>
-
-
-                    <div class="col-md-12">
-                        <div class="company-info">
-                            <p>&copy; 2018 - GamerPilot - Århus, Denmark - CVR: 39306085 - kontakt@gamerpilot.dk</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <p>&copy; 2018 - GamerPilotLanding2</p>
         </footer>
     </div>
 
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/vendor.min.js"></script>
-
-    <script src="~/js/tether.min.js"></script>
-    <script src="~/js/shepherd.min.js"></script>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
-
 
 
     @RenderSection("Scripts", required: false)

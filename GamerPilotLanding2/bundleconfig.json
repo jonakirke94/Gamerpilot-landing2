@@ -21,59 +21,21 @@
     // Optionally generate .map file
     "sourceMap": false
   },
+
   {
-    "outputFileName": "wwwroot/js/index.min.js",
+    "outputFileName": "wwwroot/vendor.min.css",
     "inputFiles": [
-      "wwwroot/js/index.js"
+      "node_modules/bootstrap/dist/css/bootstrap.min.css"
     ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optionally generate .map file
-    "sourceMap": false
+    "minify": { "enabled": false }
   },
   {
-    "outputFileName": "wwwroot/js/particles.min.js",
+    "outputFileName": "wwwroot/vendor.min.js",
     "inputFiles": [
-      "wwwroot/js/particles.js"
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/popper.js/dist/umd/popper.min.js",
+      "node_modules/bootstrap/dist/js/bootstrap.min.js"
     ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optionally generate .map file
-    "sourceMap": false
-  },
-  {
-    "outputFileName": "wwwroot/js/tether.min.js",
-    "inputFiles": [
-      "wwwroot/js/tether.js"
-    ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optionally generate .map file
-    "sourceMap": false
-  },
-  {
-    "outputFileName": "wwwroot/js/tour.min.js",
-    "inputFiles": [
-      "wwwroot/js/tour.js"
-    ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optionally generate .map file
-    "sourceMap": false
+    "minify": { "enabled": false }
   }
-
-
-
 ]
