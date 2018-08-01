@@ -30,10 +30,10 @@ namespace GamerPilotLanding2
 
             services.AddRouting(options => options.LowercaseUrls = true);
 
-            services.AddMvc(options =>
-            {
-                options.Filters.Add(new RequireHttpsAttribute());
-            });
+            //services.AddMvc(options =>
+            //{
+            //    options.Filters.Add(new RequireHttpsAttribute());
+            //});
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -42,10 +42,10 @@ namespace GamerPilotLanding2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext context)
         {
-            var options = new RewriteOptions()
-                .AddRedirectToHttps();
+            //var options = new RewriteOptions()
+            //    .AddRedirectToHttps();
 
-            app.UseRewriter(options);
+            //app.UseRewriter(options);
 
 
             if (env.IsDevelopment())

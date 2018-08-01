@@ -10,7 +10,7 @@
                 <h1>GamerPilot</h1>
                 <hr />
                 <h2>
-                    Vi lancerer snart en game-changing video-on-demand platform, der vil revolutionere undervisning i e-sport.
+                    Vi lancerer snart en video-on-demand platform, der vil revolutionere undervisning i e-sport.
                     <br />
                     <br />
 
@@ -40,8 +40,10 @@
                     <div class="popup__overlay">
                         <div class="popup" id="popupVid">
                             <a href="#" class="popup__close"><i class="far fa-times-circle"></i></a>
-
-                            <iframe src="https://www.youtube.com/embed/h6sFG7qOd4A?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            <video controls id="promo-vid">
+                                <source src="~/videos/promotion-gp.mp4" type="video/mp4">
+                            </video>
+                            @*<iframe src="https://www.youtube.com/embed/h6sFG7qOd4A?showinfo=0&rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>*@
                         </div>
                     </div>
 
@@ -170,10 +172,10 @@
                 <h2>Er der noget, du synes vi skal vide?</h2>
                 <div>
                     <form asp-controller="Home" asp-action="Feedback" method="post" id="form-feedback" asp-route-returnUrl="Index">
-                        <input type="text" class="input-feedback" name="name" placeholder="navn *" required />
-                        <input type="email" class="input-feedback form-control" name="fb_email" placeholder="email *" required />
+                        <input type="text" class="input-feedback" name="name" placeholder="navn *" required autocomplete="name" />
+                        <input type="email" class="input-feedback form-control" name="fb_email" placeholder="email *" required autocomplete="email"/>
 
-                        <textarea class="feedback_textarea" name="comment" placeholder="besked *" required></textarea>
+                        <textarea class="feedback_textarea" name="comment" placeholder="besked *" required autocomplete="on"></textarea>
                         <input type="submit" class="btn-blue btn-feedback" value="Send" />
                     </form>
                 </div>
@@ -205,6 +207,6 @@
 </section>
 
 @section Scripts {
-    <script src="~/js/particles.js"></script>
-    <script src="~/js/index.js"></script>
+    <script src="~/js/particles.min.js"></script>
+    <script src="~/js/index.min.js"></script>
 }

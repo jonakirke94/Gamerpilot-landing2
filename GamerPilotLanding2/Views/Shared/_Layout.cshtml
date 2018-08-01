@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="~/css/main.min.css" />
 
     <link rel="stylesheet" href="~/css/shepherd-theme-arrows.css" />
+    <link rel="stylesheet" href="~/vendor.min.css" />
+
 
 
 
@@ -46,12 +48,12 @@
 
                 //Get the current action name, so we can redirect to it on submit
                 @*var action = ViewContext.RouteData.Values["Action"];
-                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control input-sub" placeholder="bliv blandt de første ">
-                    </div>
-                    <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
-                </form>*@
+                    <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control input-sub" placeholder="bliv blandt de første ">
+                        </div>
+                        <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
+                    </form>*@
 
             }
 
@@ -107,13 +109,15 @@
         </footer>
     </div>
 
+    <script src="~/vendor.min.js"></script>
 
-    <script src="~/js/tether.js"></script>
+    <script src="~/js/tether.min.js"></script>
     <script src="~/js/shepherd.min.js"></script>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+
 
 
     @RenderSection("Scripts", required: false)
