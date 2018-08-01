@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] GamerPilot</title>
 
+    <link rel="stylesheet" href="~/vendor.min.css" />
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -36,7 +38,7 @@
 
                 //Get the current action name, so we can redirect to it on submit
                 var action = ViewContext.RouteData.Values["Action"];
-                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right"  asp-route-returnUrl="@action">
+                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
                     </div>
@@ -56,9 +58,10 @@
         </footer>
     </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/vendor.min.js"></script>
 
 
     @RenderSection("Scripts", required: false)
