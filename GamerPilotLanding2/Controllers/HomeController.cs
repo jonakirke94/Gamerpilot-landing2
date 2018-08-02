@@ -30,6 +30,11 @@ namespace GamerPilotLanding2.Controllers
             return View();
         }
 
+        public IActionResult Course()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Subscribe(string email, string returnUrl)

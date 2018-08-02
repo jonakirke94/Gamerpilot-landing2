@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] GamerPilot</title>
 
-    <link rel="stylesheet" href="~/vendor.min.css" />
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/main.min.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- fav icon in browser -->
     <link rel="icon" type="image/x-icon" href="/images/gp-brand.png">
@@ -31,25 +32,31 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="nav navbar-nav navbar-right">
+                <li><a asp-controller="Home" asp-action="Index" class="nav-links">Home</a></li>
+
+                <li><a asp-controller="Home" asp-action="Course" class="nav-links">Kursus</a></li>
+
+
                 <li><a asp-controller="Home" asp-action="Parents" class="nav-links">Til forældrene</a></li>
             </ul>
 
             @{
 
                 //Get the current action name, so we can redirect to it on submit
-                var action = ViewContext.RouteData.Values["Action"];
-                <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control input-sub" placeholder="få tidlig adgang">
-                    </div>
-                    <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
-                </form>
+                @*var action = ViewContext.RouteData.Values["Action"];
+                    <form asp-controller="Home" asp-action="Subscribe" method="post" class="nav navbar-form navbar-right" asp-route-returnUrl="@action">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control input-sub" placeholder="bliv blandt de første ">
+                        </div>
+                        <button type="submit" class="btn-blue btn-sub">Kom på listen</button>
+                    </form>*@
 
             }
 
         </div>
         <!-- /.navbar-collapse -->
     </nav>
+
     <div class="container-fluid body-content">
         @RenderBody()
         <hr />
@@ -61,7 +68,6 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/vendor.min.js"></script>
 
 
     @RenderSection("Scripts", required: false)
