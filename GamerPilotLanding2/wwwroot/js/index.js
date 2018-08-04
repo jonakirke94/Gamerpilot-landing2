@@ -26,14 +26,6 @@ $(".popup__close").click(function () {
 
 //video popup
 function toggleVideo(state) {
-    // if state == 'hide', hide. Else: show video
-    //var div = document.getElementById("popupVid");
-    //var iframe = div.getElementsByTagName("video")[0].contentWindow;
-    //func = state == "hide" ? "pauseVideo" : "playVideo";
-    //iframe.postMessage(
-    //    '{"event":"command","func":"' + func + '","args":""}',
-    //    "*"
-    //);
 
     var vid = document.getElementById("promo-vid"); 
 
