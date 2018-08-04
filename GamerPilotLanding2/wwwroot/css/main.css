@@ -540,7 +540,11 @@ video {
     margin-top: 20px; } }
 
 footer {
-  background-color: #262935; }
+  background-color: #262935;
+  z-index: 9999999999;
+  position: absolute;
+  width: 100%;
+}
 
 .company-info p {
   text-align: center;
@@ -1012,4 +1016,6 @@ footer {
 .fa-user-plus {
   color: #4a90e2; }
 
-
+.hamburger {
+    display: none;
+}

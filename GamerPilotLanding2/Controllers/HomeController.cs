@@ -30,9 +30,11 @@ namespace GamerPilotLanding2.Controllers
             return View();
         }
 
+        [HttpGet("kursus")]
         public IActionResult Course()
         {
             return View();
+
         }
 
         [HttpPost]
