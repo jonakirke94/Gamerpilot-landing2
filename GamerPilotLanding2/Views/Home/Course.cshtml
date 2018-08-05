@@ -7,70 +7,56 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
+                <a href="#info">
                     Communication
                 </a>
             </li>
             <li>
 
-                <a href="#">
+                <a href="#info">
                     <i class="fas s-icon fa-info-circle"></i>
                     Course Info
                 </a>
                 <!-- About Course & Course data-->
-
             </li>
             <li>
-                <a href="#course-intro-js" id="intro-tab-js">
+                <a href="#course-intro">
                     <i class="fas s-icon fa-book"></i>
                     Course Introduction
                 </a>
                 <!-- Course Intro & Learning goals-->
             </li>
             <li>
-                <a href="#rl-js">
+                <a href="#theory">
                     <i class="fas s-icon fa-play"></i>  Real life perspective
                 </a>
                 <!-- Video by business person-->
 
             </li>
             <li>
-                <a href="#">
+                <a href="#case">
                     <i class="fas s-icon fa-globe"></i>
                     A Communication Case
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#quiz">
                     <i class="fas s-icon fa-feather"></i>
                     Quiz
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#pro-content">
                     <i class="fas s-icon fa-play"></i>
                     Pro CS:GO content
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#summary">
                     <i class="fas s-icon fa-file-signature"></i>
                     Exercises & Summary
                 </a>
             </li>
-            @*<li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">Dropdown heading</li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>*@
-
-
         </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
@@ -86,16 +72,19 @@
                 <div class="content-wrapper">
 
                     <!-- Course Info-->
-                    <div class="course-block" id="course-info-js">
+                    <div class="course-block" id="info">
 
                         <h3 class="title">Communication: The key to success</h3>
                         <div class="course-info">
                             <p class="block-txt"><strong>About this course</strong></p>
                             <p class="block-txt">
-                                This is a survey of modern history from a global perspective. Part One begins with the political and economic revolutions of the late 1700s
-                                and tracks the transformation of the world during the 1800s.  Part One concludes as these bewildering changes seem to be running beyond the capacity
-                                of older institutions to handle them.  Throughout the course we try to grasp what is happening and ask:  Why?  And the answers often turn on very human
-                                choices.
+                                This course will introduce you to the world of communication and provide you with some key lessons that will drastically improve the way you communicate both ingame and in real life.
+
+                                The course includes theory, text cases, a quiz, pro CS:GO video content and exercises.
+
+                                Throughout the course we try to grasp what is good communication and how you can transfer your knowledge between CS:GO and my real life?
+
+
                             </p>
                         </div>
                         <hr />
@@ -127,20 +116,27 @@
                         </table>
 
                         <div class="enroll">
-                            <button class="btn-blue">Start</button>
+                            <a class="btn-blue" href="#course-intro" style="border-radius: 0">Start</a>
                         </div>
 
                     </div>
 
                     <!-- Course introduction-->
-                    <div class="course-block" id="course-intro-js">
+                    <div class="course-block" id="course-intro">
 
                         <h3 class="title">Course Introduction</h3>
 
                         <p class="block-txt">
-                            This course will introduce you to the world of communication and provide you with some key lessons that will drastically improve the way you communicate both ingame and in real life.
+                            In modern workplaces and on good CS:GO teams people are looking for graduates and players that are not only proficient in content, but also in soft skills. One of these
+                            skills is communication. Communication skills can be developed through both cooperative learning and direct instruction, but highest increases are linked with cooperative settings.
+                            CS:GO is a great place to do this.
+                            <br /><br />
+                            You can communicate for a variety of purposes and audiences and it takes great awareness to know when to do what. In this course we primarily focus on communication in a context
+                            where the purpose is to convey a message in a cooperative situation where information needs to be communicated.
+                            <br /><br />
 
-                            Remember it takes time ..
+                            Mastering communication takes a long time, but by being aware and applying the knowledge you learn in this course you have already taken a big step. Practicing communication in CS:GO can be discouraging at times if
+                            your teammates do not put in the same effort as you - Don't worry! As long as you do your part it will be reflected in your results in the long run!
                             <br /><br />
                             When you have finished this course you will be able to:
                             <br /><br />
@@ -179,37 +175,20 @@
                     </div>
 
                     <!-- Real life perspective-->
-                    <div class="course-block" id="rl-js">
+                    <div class="course-block" id="theory">
 
                         <h3>A real life perspective - a look into communication from a psychologist</h3>
 
 
-                        <div class="vid">
-
-
-                            <div id="popup__toggle">
-                                <div class="playbox">
-                                    <i class="fa fa-play-circle">
-                                    </i>
-                                </div>
-                            </div>
-
-                            <div class="popup__overlay">
-                                <div class="popup" id="popupVid">
-                                    <a href="#" class="popup__close"><i class="far fa-times-circle"></i></a>
-                                    <video controls id="promo-vid">
-                                        <source src="~/videos/promotion-gp.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
                         </div>
+
 
                     </div>
 
-
                     <!-- Communication Case -->
-                    <div class="course-block" id="case-js">
+                    <div class="course-block" id="case">
 
                         <h3 class="title">
                             Communication ingame & in real life situations.
@@ -314,19 +293,221 @@
 
                         <p class="block-txt">
                             Communication plays a major role in several aspects of our life and is the foundation of
-                            all human interaction. Being a good communicator in real life will almost certainly also make you a better 
+                            all human interaction. Being a good communicator in real life will almost certainly also make you a better
                             communicator in cs:go - so acknowledging the power of communication is a fundamental step towards improving yourself.
                             The beauty of such a broad skill is that you can practice it every day in different arenas; The supermarket, the classroom,
                             on a job or ingame and mastering communication in one area will have great positive effects on others.
                         </p>
 
                     </div>
+
+                    <!-- Quiz -->
+                    <div class="course-block" id="quiz">
+
+                        <h3 class="title">
+                            Quiz
+                        </h3>
+
+                        <ul class="question__list">
+                            <li class="question-wrapper">
+                                <div class="question__badge">easy</div>
+                                <div class="question">
+                                    <div class="question__tag is-easy"></div>
+                                    <div class="question__heading">
+                                        <h6>Why is it important to use a positive language?</h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+
+                                    </button>
+                                    <div class="answer hidden">
+                                        You are more likely to achieve a successful outcome by using a positive language because your message is recieved in a good manner.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="question-wrapper">
+                                <div class="question__badge">easy</div>
+                                <div class="question">
+                                    <div class="question__tag is-easy"></div>
+                                    <div class="question__heading">
+                                        <h6>
+                                            In which arenas can you practice your communication?
+                                        </h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="answer hidden">
+                                        You can practice communication whenever you interact with other people, so everywhere! Being a good communicator in real life
+                                        affects your ingame communication greatly!
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="question-wrapper">
+                                <div class="question__badge">intermediate</div>
+                                <div class="question">
+                                    <div class="question__tag"></div>
+                                    <div class="question__heading">
+                                        <h6>Why is communication important?</h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="answer hidden">
+                                        Clear goals require solid communication and sharing knowledge and information across your team will give everyone the best
+                                        conditions to take solid decisions.
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="question-wrapper">
+                                <div class="question__badge">intermediate</div>
+                                <div class="question">
+                                    <div class="question__tag"></div>
+                                    <div class="question__heading">
+                                        <h6>
+                                            What does speaking style mean?
+                                        </h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="answer hidden">
+                                        Speaking style means the tone, pitch, accent, volume and pace of your voice.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="question-wrapper">
+                                <div class="question__badge">hard</div>
+                                <div class="question">
+                                    <div class="question__tag is-hard"></div>
+                                    <div class="question__heading">
+                                        <h6>What is wrong with this statement: "EVERYONE go nade long A next round!"</h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="answer hidden">
+                                        It's a very aggressive statement that comes across as hostile and unfriendly behaviour hence people are less likely
+                                        to listen to you.
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="question-wrapper">
+                                <div class="question__badge">hard</div>
+                                <div class="question">
+                                    <div class="question__tag is-hard"></div>
+                                    <div class="question__heading">
+                                        <h6>
+                                            What does the instructor in the real life perspective video describe good communication as?
+                                        </h6>
+                                    </div>
+                                    <button class="question__button">
+                                        <span>Show answer</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="answer hidden">
+                                        Accurate, necessary and well timed. Bad communication on the other is the exact opposite.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Pro content -->
+                    <div class="course-block" id="pro-content">
+
+                        <h3 class="title">
+                            Pro CS:GO content: Improve your ingame communication
+                        </h3>
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
+                        </div>
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
+                        </div>
+
+                    </div>
+
+                    <!-- Exercises Summary -->
+                    <div class="course-block" id="summary">
+
+                        <h3 class="title">
+                            Exercises & Summary
+                        </h3>
+
+                        <p class="block-txt">
+                            This wraps up the communication course. Remember improving your communication is a process and doesn't happen overnight. You've already taken a solid
+                            step by acquiring knowledge about communication. Good communication is accurate, necessary and well-timed. Those are points you can transfer to other areas in your life such
+                            as the classroom or the football field - not just when you play computer
+
+                            <br /><br />
+
+                            Let's take a look at some exercises you can do to practice your communication:
+                        </p>
+
+                        <ul class="question__list">
+                            <li class="exercise-wrapper">
+                                <div class="question__badge">Ingame</div>
+                                <div class="question">
+                                    <div class="question__tag"></div>
+                                    <div class="question__heading">
+                                        <h6>Play a game of CS:GO where you put great effort into communicating and keeping a positive atmosphere in the team.</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="exercise-wrapper">
+                                <div class="question__badge">Real life</div>
+                                <div class="question">
+                                    <div class="question__tag is-easy"></div>
+                                    <div class="question__heading">
+                                        <h6>Think about a topic or something that happened today and try to communicate it to a family member or friend keeping all the things you have learned in mind.</h6>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="exercise-wrapper">
+                                <div class="question__badge">Real life</div>
+                                <div class="question">
+                                    <div class="question__tag is-easy"></div>
+                                    <div class="question__heading">
+                                        <h6>Try to put words on what good and bad communication is. Do you know anyone who is good at communication? Ask yourself why.</h6>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+
                 </div>
-
-
+                </div>
         </div>
 
     </div>
     <!-- /#page-content-wrapper -->
 </div>
 <!-- /#wrapper -->
+
+
+
+@section Scripts {
+    <script src="~/js/course.js"></script>
+}

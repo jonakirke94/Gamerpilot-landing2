@@ -59,6 +59,7 @@ body {
   padding-bottom: 0; }
 
 .navbar-toggle {
+  z-index: 99999;
   border: none;
   background: transparent !important; }
 
@@ -115,7 +116,8 @@ a:hover {
   color: #fff !important; }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-  max-height: 500px !important; }
+    max-height: 500px !important;
+}
 
 .navbar .navbar-collapse {
   text-align: center; }
@@ -541,7 +543,7 @@ video {
 
 footer {
   background-color: #262935;
-  z-index: 9999999999;
+  z-index: 9999;
   position: absolute;
   width: 100%;
 }
@@ -874,7 +876,7 @@ footer {
 
 .teaser-sub {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 160px;
   padding-bottom: 150px; }
 
 .subscribe-bg {
@@ -1007,6 +1009,7 @@ footer {
   font-size: 38px; }
 
 .fa-arrow-alt-circle-up {
+  z-index: 99999;
   font-size: 38px !important;
   color: #4a90e2; }
 
@@ -1018,4 +1021,12 @@ footer {
 
 .hamburger {
     display: none;
+}
+
+.highlighted {
+    border-radius: 0;
+    width: 120px;
+    height: 70px;
+    padding-top: 28px !important;  
+    margin-top: -10px !important;
 }
